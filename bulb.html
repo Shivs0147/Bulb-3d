@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bulb – 3D & AR</title>
+    <style>
+      html, body { height: 100%; margin: 0; }
+      model-viewer { width: 100%; height: 100%; background: #f7f7f7; }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="Bulb.glb"
+      ios-src="Bulb.usdz"
+      alt="3D Bulb"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      auto-rotate
+      exposure="1.0"
+      shadow-intensity="0.6">
+    </model-viewer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
